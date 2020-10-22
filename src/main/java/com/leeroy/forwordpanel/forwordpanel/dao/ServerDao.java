@@ -17,4 +17,7 @@ public interface ServerDao extends BaseMapper<Server> {
 
     @Select("select s.* from server s, user_server us where s.id = us.server_id and s.deleted = false and us.deleted = false and us.user_id =#{userId} ")
     List<Server> selectUserServer(Integer userId);
+
+    @Select("select s.* from server s where exists ( select 1 from user_port_forward upf where s.id = upf.server_id and s.deleted = false and upf.deleted = false and upf.user_id =#{userId}) ")
+    List<Server> selectForwardServer(Integer userId);
 }

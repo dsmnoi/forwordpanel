@@ -14,6 +14,7 @@ import com.leeroy.forwordpanel.forwordpanel.dto.PortAddDTO;
 import com.leeroy.forwordpanel.forwordpanel.dto.PortDTO;
 import com.leeroy.forwordpanel.forwordpanel.dto.PortPageRequest;
 import com.leeroy.forwordpanel.forwordpanel.model.*;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,7 @@ import java.util.concurrent.Executors;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Service
 public class PortService {
 
@@ -112,6 +114,40 @@ public class PortService {
                 addPort.setDeleted(false);
                 addPort.setCreateTime(new Date());
                 portDao.insert(addPort);
+            });
+
+        }
+        return ApiResponse.ok();
+    }
+
+    /**
+     * 保存clash
+     */
+    public ApiResponse batchDelete(PortAddDTO portAddDTO) {
+        String localPort = portAddDTO.getLocalPort();
+        if(!checkPort(localPort)){
+            return ApiResponse.error("400", "端口格式错误");
+        }
+        if(localPort.indexOf("-")<=0){
+            return ApiResponse.error("400", "端口格式错误");
+        }
+        if(getRange(localPort)>65535){
+            return ApiResponse.error("400", "端口一次最多新增65535个");
+        }
+        List<Integer> localPortList = getPortAddList(localPort);
+        for (int i = 0; i < localPortList.size(); i++) {
+            Integer addLocalPort = localPortList.get(i);
+            executorService.execute(() -> {
+                List<Port> portList = userPortDao.selectByLocalPort(addLocalPort, portAddDTO.getServerId());
+                if (!CollectionUtils.isEmpty(portList)) {
+                    return;
+                }
+                LambdaQueryWrapper<Port> queryWrapper = Wrappers.<Port>lambdaQuery().eq(Port::getServerId, portAddDTO.getServerId())
+                        .eq(Port::getLocalPort, addLocalPort)
+                        .eq(Port::getDeleted, false);
+                Port userPort = new Port();
+                userPort.setDeleted(true);
+                portDao.update(userPort,queryWrapper);
             });
 
         }

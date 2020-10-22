@@ -42,4 +42,6 @@ public class UserPortForward {
     private Boolean deleted;
     //禁用表示
     private Boolean disabled;
+
+    private Integer state;
 }

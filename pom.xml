@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.leeroy.forwordpanel</groupId>
     <artifactId>forwordpanel</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.6-SNAPSHOT</version>
     <name>forwordpanel</name>
     <description>port forword panel</description>
 
@@ -119,6 +119,19 @@
     </dependencies>
 
     <build>
+        <filters> <!-- 指定使用的 filter -->
+            <filter>docker/application.properties</filter>
+        </filters>
+        <resources>
+            <resource> <!-- 配置需要被替换的资源文件路径, properties 应该在 src/main/resource 目录下 -->
+                <directory>docker</directory>
+                <filtering>true</filtering> <!-- 是否使用过滤器 -->
+            </resource>
+            <resource> <!-- 配置需要被替换的资源文件路径, properties 应该在 src/main/resource 目录下 -->
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering> <!-- 是否使用过滤器 -->
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -276,70 +276,971 @@ SELECT  id,forward_id,user_id,port_id,server_id,remote_ip,remote_host,data_usage
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2020-09-20 17:37:10 jdbc[17]: null
-org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-200]
+2020-10-16 21:42:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-16 23:18:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-16 23:19:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 06:47:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 09:39:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 09:53:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 10:40:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 12:03:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 15:54:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 16:06:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 16:07:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 16:54:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 17:00:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 17:05:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 20:23:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 20:35:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 20:35:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 20:39:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 20:39:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 20:48:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 21:26:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 21:36:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 21:43:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 21:57:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 07:41:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 09:24:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 10:45:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 10:50:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 12:43:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 12:54:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 13:35:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 13:48:21 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT S.* FROM SERVER S  WHERE EXISTS ( SELECT 1 USER_PORT_FORWARD UPF[*] WHERE S.ID = UPF.SERVER_ID AND S.DELETED = FALSE AND UPF.DELETED = FALSE AND UPF.USER_ID =1)"; expected ",, FROM, WHERE, GROUP, HAVING, WINDOW, QUALIFY, UNION, EXCEPT, MINUS, INTERSECT, ORDER, OFFSET, FETCH, LIMIT, SAMPLE_SIZE, FOR, )"; SQL statement:
+select s.* from server s  where exists ( select 1 user_port_forward upf where s.id = upf.server_id and s.deleted = false and upf.deleted = false and upf.user_id =1) [42001-200]
+2020-10-18 13:48:39 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT S.* FROM SERVER S  EXISTS[*] ( SELECT 1 USER_PORT_FORWARD UPF WHERE S.ID = UPF.SERVER_ID AND S.DELETED = FALSE AND UPF.DELETED = FALSE AND UPF.USER_ID =1)"; SQL statement:
+select s.* from server s  exists ( select 1 user_port_forward upf where s.id = upf.server_id and s.deleted = false and upf.deleted = false and upf.user_id =1) [42000-200]
+2020-10-18 13:49:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 14:01:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 14:11:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 14:35:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-18 14:36:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 21:29:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 21:31:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 21:32:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 21:58:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 21:59:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 22:06:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 22:06:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "PORT" not found; SQL statement:
+delete from port where port>= ? and port <=? and server_id = ? [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
-	at org.h2.message.DbException.get(DbException.java:170)
-	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:245)
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:186)
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
-	at org.h2.Driver.connect(Driver.java:69)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
-	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
-	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:725)
-	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:711)
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
-	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:190)
+	at org.h2.expression.condition.ConditionAndOr.optimize(ConditionAndOr.java:135)
+	at org.h2.expression.condition.ConditionAndOr.optimize(ConditionAndOr.java:135)
+	at org.h2.command.dml.Delete.prepare(Delete.java:184)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:92)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:53)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.update(MybatisCachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy148.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy76.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:65)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy108.batchDelete(Unknown Source)
+	at com.leeroy.forwordpanel.forwordpanel.service.PortService.batchDelete(PortService.java:141)
+	at com.leeroy.forwordpanel.forwordpanel.controller.PortController.batchDeleteUserPort(PortController.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-200]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
+2020-10-19 22:07:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 22:22:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 22:26:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 22:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 22:42:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 22:49:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 22:51:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 22:57:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 23:00:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-19 23:41:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-09-20 19:17:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-09-20 19:17:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-09-30 13:40:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-09-30 13:43:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-09-30 14:17:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-09-30 14:21:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-09-30 14:29:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-09-30 16:15:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-09-30 16:35:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-09-30 16:42:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 16:04:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 16:07:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 16:09:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 16:12:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 16:27:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 16:30:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 16:49:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 16:51:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 21:37:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 21:42:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 21:46:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 21:47:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 21:49:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 22:14:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 22:21:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 22:24:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 22:44:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:20:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:29:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:30:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:30:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:31:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:35:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:39:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:47:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:54:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:57:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-10 23:57:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-11 00:27:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-11 00:29:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-11 00:31:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-11 00:34:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-11 00:40:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-11 00:43:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 11:55:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 12:36:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 12:58:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 13:00:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 13:14:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 13:20:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 13:39:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 14:59:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 15:05:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 15:11:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 16:18:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 16:26:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 16:29:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 16:42:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 16:51:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 17:04:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 17:10:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 17:13:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 17:17:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 17:19:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 17:22:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 17:24:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 17:25:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 17:28:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-12 17:52:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 08:49:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 09:16:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 09:28:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 09:29:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 10:48:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 10:51:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 13:20:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 13:35:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 16:34:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 17:30:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 17:40:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 17:44:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 17:47:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 17:51:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 17:54:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 17:59:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 18:06:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 18:46:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 18:50:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 18:53:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 19:01:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-13 19:12:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-14 10:11:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-14 10:49:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-14 10:49:20 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DISABLED" not found; SQL statement:
+SELECT  token,username,user_id,disabled,expire_time,create_time,update_time  FROM user_token 
+ 
+ WHERE (token = ? AND expire_time > ?) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
-	... 19 more
-2020-09-20 18:28:13 jdbc[3]: exception
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy74.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:92)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:163)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy150.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy75.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:108)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy76.selectOne(Unknown Source)
+	at com.leeroy.forwordpanel.forwordpanel.service.UserTokenService.getUserToken(UserTokenService.java:53)
+	at com.leeroy.forwordpanel.forwordpanel.common.AuthInterceptor.preHandle(AuthInterceptor.java:51)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-14 10:49:20 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DISABLED" not found; SQL statement:
+SELECT  token,username,user_id,disabled,expire_time,create_time,update_time  FROM user_token 
+ 
+ WHERE (token = ? AND expire_time > ?) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy74.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:92)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:163)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy150.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy75.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:108)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy76.selectOne(Unknown Source)
+	at com.leeroy.forwordpanel.forwordpanel.service.UserTokenService.getUserToken(UserTokenService.java:53)
+	at com.leeroy.forwordpanel.forwordpanel.common.AuthInterceptor.preHandle(AuthInterceptor.java:51)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-14 10:49:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DISABLED" not found; SQL statement:
+SELECT  token,username,user_id,disabled,expire_time,create_time,update_time  FROM user_token 
+ 
+ WHERE (token = ? AND expire_time > ?) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy74.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:92)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:163)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy150.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy75.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:108)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy76.selectOne(Unknown Source)
+	at com.leeroy.forwordpanel.forwordpanel.service.UserTokenService.getUserToken(UserTokenService.java:53)
+	at com.leeroy.forwordpanel.forwordpanel.common.AuthInterceptor.preHandle(AuthInterceptor.java:51)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-14 10:51:12 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 18:31:24 jdbc[3]: exception
+2020-10-14 11:28:48 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 18:34:13 jdbc[3]: exception
+2020-10-14 11:29:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO SYS_CONFIG    VALUES[*]"; expected "ROW, (, DEFAULT, NOT, EXISTS, INTERSECTS, UNIQUE"; SQL statement:
+INSERT INTO sys_config    VALUES [42001-200]
+2020-10-14 11:37:45 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 18:39:30 jdbc[3]: exception
+2020-10-14 11:38:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO SYS_CONFIG    VALUES[*]"; expected "ROW, (, DEFAULT, NOT, EXISTS, INTERSECTS, UNIQUE"; SQL statement:
+INSERT INTO sys_config    VALUES [42001-200]
+2020-10-14 11:41:05 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 18:42:31 jdbc[3]: exception
+2020-10-14 11:45:44 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 18:44:21 jdbc[3]: exception
+2020-10-14 13:07:38 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 18:47:54 jdbc[3]: exception
+2020-10-14 13:25:20 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 18:52:47 jdbc[3]: exception
+2020-10-14 13:37:31 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 18:55:49 jdbc[3]: exception
+2020-10-14 13:46:50 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 18:58:25 jdbc[3]: exception
+2020-10-14 14:23:46 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 19:01:59 jdbc[3]: exception
+2020-10-14 14:37:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 19:02:24 jdbc[3]: exception
+2020-10-14 14:42:33 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 19:08:35 jdbc[3]: exception
+2020-10-14 14:44:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
-2020-09-20 19:13:32 jdbc[3]: exception
+2020-10-14 14:48:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-14 19:55:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-14 20:22:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-14 20:27:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 09:20:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 09:32:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 09:36:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 09:51:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 10:09:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 10:12:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 10:18:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 10:40:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 11:09:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 11:10:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 11:48:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 11:50:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 11:55:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 12:57:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 13:14:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 13:17:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 13:44:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 13:47:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 14:11:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 14:15:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 14:29:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-15 17:45:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-16 15:06:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-16 16:08:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 00:28:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
+CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]
+2020-10-17 00:34:27 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SYS_USER" already exists; SQL statement:
 CREATE TABLE sys_user ( id int NOT NULL AUTO_INCREMENT , username varchar(50) NOT NULL, password varchar(250) DEFAULT NULL , user_phone varchar(11) , telegram varchar(11) , reg_time DATE , data_limit BIGINT, expire_time DATE, data_usage BIGINT, user_type INTEGER NOT NULL DEFAULT 1, disabled BOOLEAN , deleted BOOLEAN ) [42101-200]

@@ -68,10 +68,12 @@ public class ServerService {
             testConnect(server);
         } else {
             Server existPort = serverDao.selectById(server.getId());
+            String password = StringUtils.isEmpty(server.getPassword())?existPort.getPassword():server.getPassword();
             BeanUtils.copyProperties(server, existPort);
             existPort.setUpdateTime(new Date());
             existPort.setState(ServerStatusEnum.INIT.getCode());
             serverDao.updateById(existPort);
+            existPort.setPassword(password);
             testConnect(existPort);
 
         }
@@ -84,7 +86,6 @@ public class ServerService {
      */
     public void testConnect(Server server){
         executorService.execute(() -> {
-            remoteForwardService.checkIPV4Forward(server);
             String response = remoteForwardService.getLastRestart(server);
             if(StringUtils.isEmpty(response)){
                 server.setState(ServerStatusEnum.CONNECT_FAIL.getCode());
@@ -106,6 +107,15 @@ public class ServerService {
         PageInfo<Server> pageInfo = page.toPageInfo();
         pageInfo.setList(serverList);
         return pageInfo;
+    }
+
+
+    public List<Server> getForwardServerList(Integer userId) {
+        List<Server> serverList = serverDao.selectForwardServer(userId);
+        serverList.stream().forEach(server -> {
+            server.setPassword("******");
+        });
+        return serverList;
     }
 
     /**
@@ -172,6 +182,22 @@ public class ServerService {
         serverDao.updateById(userPort);
         LambdaQueryWrapper<UserServer> userServerQueryWrapper = Wrappers.<UserServer>lambdaQuery().eq(UserServer::getDeleted, false).eq(UserServer::getServerId, id);
         userServerDao.delete(userServerQueryWrapper);
+        return ApiResponse.ok();
+    }
+
+    /**
+     * 删除clash
+     */
+    public ApiResponse check(Integer id) {
+        Server server = serverDao.selectById(id);
+        String response = remoteForwardService.getLastRestart(server);
+        if(StringUtils.isEmpty(response)){
+            server.setState(ServerStatusEnum.CONNECT_FAIL.getCode());
+        }else {
+            server.setLastRebootTime(response);
+            server.setState(ServerStatusEnum.ONLINE.getCode());
+        }
+        serverDao.updateById(server);
         return ApiResponse.ok();
     }
 

@@ -212,4 +212,16 @@ public class UserController {
     public ApiResponse getForwardFlow(@RequestParam(value = "userId", required = false) Integer userId) {
         return ApiResponse.ok(userService.getForwardFlow(userId));
     }
+
+    /**
+     * 获取用户详细流量信息
+     *
+     * @param forwardId
+     * @return
+     */
+    @GetMapping(value = "/getPortForwardFlow")
+    @ResponseBody
+    public ApiResponse getPortForwardFlow(@RequestParam(value = "forwardId", required = false) Integer forwardId) {
+        return ApiResponse.ok(userService.getPortForwardFlow(forwardId));
+    }
 }

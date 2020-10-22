@@ -15,4 +15,7 @@ public interface PortDao extends BaseMapper<Port> {
 
     @Select("select a.* from port a where not exists (select 1 from user_port up where up.port_id = a.id and up.deleted=0) and a.deleted=0 and a.server_id = #{serverId} order by a.create_time desc")
     List<Port> selectServerFreePort(Integer serverId);
+
+    @Update("delete from port where local_port>= #{startPort} and local_port <=#{endPort} and server_id = #{serverId}")
+    void batchDelete(Integer startPort, Integer endPort, Integer serverId);
 }

@@ -100,7 +100,7 @@ public class DataUpgradeService {
         List<UserPort> userPortList = userPortDao.selectList(Wrappers.lambdaQuery());
         exportMap.put("userPortList", userPortList);
         //user port list
-        List<Port> portList = portDao.selectList(Wrappers.lambdaQuery());
+        List<Port> portList = portDao.selectList(Wrappers.<Port>lambdaQuery().eq(Port::getDeleted, false));
         exportMap.put("portList", portList);
         //clash list
         List<Clash> clashList = clashDao.selectList(Wrappers.lambdaQuery());

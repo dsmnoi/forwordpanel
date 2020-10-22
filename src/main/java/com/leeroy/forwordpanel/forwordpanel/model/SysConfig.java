@@ -35,5 +35,10 @@ public class SysConfig {
      */
     private String qq;
 
+    /**
+     * 当前版本
+     */
+    private String version;
+
 
 }

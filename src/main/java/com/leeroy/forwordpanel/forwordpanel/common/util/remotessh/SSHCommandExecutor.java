@@ -1,19 +1,20 @@
 package com.leeroy.forwordpanel.forwordpanel.common.util.remotessh;
 
-import com.jcraft.jsch.*;
+import com.jcraft.jsch.Channel;
+import com.jcraft.jsch.ChannelExec;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.Session;
 import com.leeroy.forwordpanel.forwordpanel.model.Server;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.ClassPathUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.util.CollectionUtils;
-import org.springframework.util.ResourceUtils;
-import org.springframework.web.servlet.resource.PathResourceResolver;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Properties;
+import java.util.Map;
 import java.util.Vector;
 
 /**
@@ -27,8 +28,6 @@ public class SSHCommandExecutor {
 
     private String password;
 
-    private String privateKeyPath;
-
     public int  port = 34204;
 
     private Vector<String> stdout;
@@ -36,6 +35,8 @@ public class SSHCommandExecutor {
     public String getIpAddress() {
         return ipAddress;
     }
+
+    private SessionPool sessionPool;
 
     public int getPort() {
         return port;
@@ -48,13 +49,14 @@ public class SSHCommandExecutor {
         stdout = new Vector<>();
     }
 
-    public SSHCommandExecutor(Server server) {
+    public SSHCommandExecutor(Server server, SessionPool sessionPool) {
         this.ipAddress = server.getHost();
         this.port = server.getPort();
         this.username = server.getUsername();
 //        this.privateKeyPath = server.getPassword();
         this.password = server.getPassword();
         stdout = new Vector<>();
+        this.sessionPool = sessionPool;
     }
 
 
@@ -62,20 +64,22 @@ public class SSHCommandExecutor {
         this.ipAddress = server.getHost();
         this.port = server.getPort();
         this.username = username;
-        this.privateKeyPath = privateKeyPath;
         stdout = new Vector<>();
     }
+
 
     public int execute(final String... commandList) {
         stdout.clear();
         int returnCode = 0;
         JSch jsch = new JSch();
         MyUserInfo userInfo = new MyUserInfo();
+        Session session = null;
         try {
-            Session session = jsch.getSession(username, ipAddress, port);
-            session.setPassword(password);
-            session.setUserInfo(userInfo);
-            session.connect();
+            session = sessionPool.getSession();
+            if (session == null) {
+                log.error("session 获取失败");
+                return 0;
+            }
             for (String command : commandList) {
                 // Create and connect channel.
                 Channel channel = session.openChannel("exec");
@@ -99,16 +103,20 @@ public class SSHCommandExecutor {
                 // Disconnect the channel and session.
                 channel.disconnect();
             }
-
-            session.disconnect();
-        } catch (JSchException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("执行shell失败", e);
+        }finally {
+            if(session!=null){
+                sessionPool.release(session);
+            }
         }
         log.info("shell result: {}", StringUtils.join(stdout));
         return returnCode;
+    }
+
+
+    public void executeScript(final String script){
+        executeScript(script, null);
     }
 
     /**
@@ -116,13 +124,18 @@ public class SSHCommandExecutor {
      * @param script
      * @return
      */
-    public void executeScript(final String script) {
+    public void executeScript(final String script, Map<String, String> paramMap) {
         try {
             List<String> commandList = new ArrayList<>();
             ClassPathResource resource = new ClassPathResource("scripts/" + script);
             BufferedReader br = new BufferedReader(new InputStreamReader(resource.getInputStream()));
             String str;
             while ((str = br.readLine()) != null) {
+                if(paramMap!=null){
+                    for (Map.Entry<String, String> stringEntry : paramMap.entrySet()) {
+                        str = str.replaceAll(stringEntry.getKey(), stringEntry.getValue());
+                    }
+                }
                 commandList.add(str);
             }
             execute(commandList.toArray(new String[]{}));

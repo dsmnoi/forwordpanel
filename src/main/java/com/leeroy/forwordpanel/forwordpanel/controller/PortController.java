@@ -62,6 +62,15 @@ public class PortController {
     }
 
     @ResponseBody
+    @RequestMapping(value = "batchDelete", method = RequestMethod.POST)
+    public ApiResponse batchDeleteUserPort(@RequestBody PortAddDTO port) {
+        if(WebCurrentData.getUser().getUserType()>0){
+            return ApiResponse.error("403", "您没有权限执行此操作");
+        }
+        return portService.batchDelete(port);
+    }
+
+    @ResponseBody
     @GetMapping("delete")
     public ApiResponse delete(Integer id) {
         if(WebCurrentData.getUser().getUserType()>0){

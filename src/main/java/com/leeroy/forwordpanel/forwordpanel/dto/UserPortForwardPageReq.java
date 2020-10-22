@@ -11,4 +11,5 @@ import lombok.Data;
 @Data
 public class UserPortForwardPageReq extends PageRequest {
     private Integer userId;
+    private Integer serverId;
 }

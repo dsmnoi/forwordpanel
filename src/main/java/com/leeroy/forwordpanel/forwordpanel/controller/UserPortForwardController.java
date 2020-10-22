@@ -42,7 +42,7 @@ public class UserPortForwardController {
     @ResponseBody
     @PostMapping("start")
     public ApiResponse startForward(@RequestBody UserPortForward userPortForward) {
-        userPortForward.setUserId(WebCurrentData.getUserId());
+        userPortForward.setUserId(userPortForward.getUserId()==null?WebCurrentData.getUserId():userPortForward.getUserId());
         return forwardService.startForward(userPortForward, true);
     }
 

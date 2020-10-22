@@ -39,10 +39,11 @@ public class KeepForwardJob {
 
     @Scheduled(cron = "0 0/3 * * * ?")
     public void execute() {
+        log.info(">>>>开始执行中转机重启检查任务");
         List<Server> serviceList = serverService.findListWithoutLogin();
         for (Server server : serviceList) {
-            remoteForwardService.checkIPV4Forward(server);
             String lastRestart = remoteForwardService.getLastRestart(server);
+            log.info(">>>>服务器:{} 当前重启时间:{}, 记录重启时间:{}", server.getServerName(), lastRestart, server.getLastRebootTime());
             if(StringUtils.isEmpty(lastRestart)){
                 server.setState(ServerStatusEnum.CONNECT_FAIL.getCode());
                 serverService.save(server);
@@ -52,13 +53,13 @@ public class KeepForwardJob {
             }
             //重启过
             if(StringUtils.isEmpty(server.getLastRebootTime()) ||!server.getLastRebootTime().equals(lastRestart)){
-                log.info(">>>>重启过, 开始启动中转");
+                log.info(">>>>服务器:{} 重启过, 开始启动中转", server.getServerName());
                 List<UserPortForward> userForwardList = userPortForwardService.findServerEnabledForwardList(server.getId());
                 for (UserPortForward userPortForward : userForwardList) {
                     userPortForwardService.startForward(userPortForward, false);
                 }
                 server.setLastRebootTime(lastRestart);
-                log.info(">>>>重启过, 启动中转完成");
+                log.info(">>>>服务器:{} 重启过, 启动中转完成", server.getServerName());
             }
             serverService.save(server);
         }

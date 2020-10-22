@@ -32,6 +32,8 @@ public class ResourceController {
         adminResourceList.add(new Resource(5, "中转管理", "/forward", "el-icon-attract"));
         adminResourceList.add(new Resource(6, "配置文件", "/config", "el-icon-tickets"));
         adminResourceList.add(new Resource(7, "系统设置", "/system", "el-icon-s-tools"));
+//        adminResourceList.add(new Resource(7, "更新记录", "/system", "el-icon-notebook-2"));
+        adminResourceList.add(new Resource(8, "打赏", "/reward", "el-icon-sugar"));
 
 
         USER_TYPE_RESOURCE.put(0, adminResourceList);
@@ -39,6 +41,8 @@ public class ResourceController {
         userResourceList.add(new Resource(1, "看板", "/dashboard", "dashboard"));
         userResourceList.add(new Resource(5, "中转管理", "/forward", "el-icon-attract"));
         userResourceList.add(new Resource(6, "配置文件", "/config", "el-icon-tickets"));
+//        userResourceList.add(new Resource(6, "更新记录", "/config", "el-icon-notebook-2"));
+        userResourceList.add(new Resource(8, "打赏", "/reward", "el-icon-sugar"));
         USER_TYPE_RESOURCE.put(1, userResourceList);
     }
 

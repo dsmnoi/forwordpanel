@@ -46,6 +46,9 @@ public class ForwardFlowService {
     @Autowired
     private PortDao portDao;
 
+    @Autowired
+    private RemoteForwardService remoteForwardService;
+
     /**
      * 保存中转记录
      * @param forwardFlow
@@ -60,7 +63,7 @@ public class ForwardFlowService {
             if(forwardFlow.getDataUsage()==null||forwardFlow.getDataUsage().equals(0L)){
                 return;
             }
-            oldForwardFlow.setDataUsage(forwardFlow.getDataUsage());
+            oldForwardFlow.setDataUsage(oldForwardFlow.getDataUsage()+forwardFlow.getDataUsage());
             oldForwardFlow.setUpdateTime(new Date());
             forwardFlowDao.updateById(oldForwardFlow);
         }else {
@@ -87,6 +90,10 @@ public class ForwardFlowService {
             forwardFlow.setDataUsage(Long.valueOf(dataUsage));
             saveFlow(forwardFlow);
         }
+        for (UserPortForward userPortForward : userForwardList) {
+            Server server = serverDao.selectById(userPortForward.getServerId());
+            remoteForwardService.resetFlowCount(server, userPortForward.getRemoteIp(), userPortForward.getRemotePort());
+        }
     }
 
     /**
@@ -112,6 +119,20 @@ public class ForwardFlowService {
     }
 
     /**
+     * 获取用户流量
+     * @param forwardId
+     * @return
+     */
+    public Long getForwardFlowTotal(Integer forwardId){
+        LambdaQueryWrapper<ForwardFlow> queryWrapper = Wrappers.<ForwardFlow>lambdaQuery()
+                .eq(ForwardFlow::getForwardId, forwardId);
+        List<ForwardFlow> forwardFlows = forwardFlowDao.selectList(queryWrapper);
+        return forwardFlows.stream().collect(Collectors.summingLong(ForwardFlow::getDataUsage));
+    }
+
+
+
+    /**
      * 流量使用详情
      * @param userId
      * @return
@@ -119,6 +140,31 @@ public class ForwardFlowService {
     public List<ForwardFlowDTO> getUserFlow(Integer userId) {
         LambdaQueryWrapper<ForwardFlow> queryWrapper = Wrappers.<ForwardFlow>lambdaQuery()
                 .eq(ForwardFlow::getUserId, userId);
+        List<ForwardFlow> forwardFlows = forwardFlowDao.selectList(queryWrapper);
+        List<ForwardFlowDTO> forwardFlowDTOList = new ArrayList<>();
+        for (ForwardFlow forwardFlow : forwardFlows) {
+            ForwardFlowDTO forwardFlowDTO = new ForwardFlowDTO();
+            BeanUtils.copyProperties(forwardFlow, forwardFlowDTO);
+            Port port = portDao.selectById(forwardFlow.getPortId());
+            Server server = serverDao.selectById(forwardFlow.getServerId());
+            forwardFlowDTO.setServerName(server.getServerName());
+            forwardFlowDTO.setLocalPort(port.getLocalPort());
+            forwardFlowDTO.setInternetPort(port.getInternetPort());
+            forwardFlowDTOList.add(forwardFlowDTO);
+        }
+        forwardFlowDTOList = forwardFlowDTOList.stream().filter(forwardFlowDTO -> forwardFlowDTO.getDataUsage()!=null&&forwardFlowDTO.getDataUsage()>0).collect(Collectors.toList());
+        return forwardFlowDTOList;
+    }
+
+
+    /**
+     * 流量使用详情
+     * @param forwardId
+     * @return
+     */
+    public List<ForwardFlowDTO> getPortForwardFlow(Integer forwardId) {
+        LambdaQueryWrapper<ForwardFlow> queryWrapper = Wrappers.<ForwardFlow>lambdaQuery()
+                .eq(ForwardFlow::getForwardId, forwardId);
         List<ForwardFlow> forwardFlows = forwardFlowDao.selectList(queryWrapper);
         List<ForwardFlowDTO> forwardFlowDTOList = new ArrayList<>();
         for (ForwardFlow forwardFlow : forwardFlows) {

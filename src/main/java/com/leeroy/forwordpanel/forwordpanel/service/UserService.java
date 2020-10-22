@@ -112,6 +112,10 @@ public class UserService {
         return forwardFlowService.getUserFlow(userId);
     }
 
+    public List<ForwardFlowDTO> getPortForwardFlow(Integer portForwardId){
+        return forwardFlowService.getPortForwardFlow(portForwardId);
+    }
+
     public UserDTO getCurrentUser() {
         Integer userId = WebCurrentData.getUserId();
         if (userId == null) {

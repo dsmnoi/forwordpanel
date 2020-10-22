@@ -5,6 +5,7 @@ import com.leeroy.forwordpanel.forwordpanel.dao.SysConfigDao;
 import com.leeroy.forwordpanel.forwordpanel.model.SysConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 /**
@@ -21,6 +22,9 @@ public class SysConfigService {
     @Autowired
     SysConfigDao sysConfigDao;
 
+    @Value("${panel.version:test}")
+    private String version;
+
     /**
      * 保存clash
      */
@@ -36,15 +40,20 @@ public class SysConfigService {
 
     /**
      * 获取配置
+     *
      * @return
      */
-    public ApiResponse getConfig(){
+    public ApiResponse getConfig() {
         SysConfig sysConfig = sysConfigDao.selectById(1);
-        if(sysConfig==null){
+
+        if (sysConfig == null) {
             sysConfig = new SysConfig();
+            sysConfig.setVersion(version);
             sysConfig.setId(1);
             sysConfig.setTelegram("");
             sysConfigDao.insert(sysConfig);
+        } else {
+            sysConfig.setVersion(version);
         }
         return ApiResponse.ok(sysConfig);
     }

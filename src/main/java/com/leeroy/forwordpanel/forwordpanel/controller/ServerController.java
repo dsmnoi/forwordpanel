@@ -32,6 +32,13 @@ public class ServerController {
         return ApiResponse.ok(serverService.findList());
     }
 
+
+    @ResponseBody
+    @GetMapping("getForwardServerList")
+    public ApiResponse getForwardServerList(Integer userId) {
+        return ApiResponse.ok(serverService.getForwardServerList(userId));
+    }
+
     @ResponseBody
     @RequestMapping(value = "save", method = RequestMethod.POST)
     public ApiResponse saveUserPort(@RequestBody Server server) {
@@ -48,6 +55,12 @@ public class ServerController {
             return ApiResponse.error("403", "您没有权限执行此操作");
         }
         return serverService.delete(id);
+    }
+
+    @ResponseBody
+    @GetMapping("check")
+    public ApiResponse check(Integer id) {
+        return serverService.check(id);
     }
 
 
